@@ -25,6 +25,9 @@ To build a simple TODO spring-boot application.
 - Testing approach (Pref using spock)
 - Cucumber tests (Nice to have)
 
+**How to submit test**
+Please create a private fork and once done please send a PR to integration branch.
+
 
 
 
