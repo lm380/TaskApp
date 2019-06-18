@@ -97,15 +97,6 @@ public class TaskControllerTest {
         mockMvc.perform(requestBuilder).andExpect(status().isBadRequest());
     }
 
-//    @Test
-//    public void update() throws Exception {
-//        Task task = makeTask();
-//        RequestBuilder requestBuilder = MockMvcRequestBuilders.put("/tasks/"+task.getId())
-//                .accept(MediaType.APPLICATION_JSON).content("{\"id\" : 1,\"name\" : \"task1\", \"estimatedDurationInHours\" : 2.0}")
-//                .contentType(MediaType.APPLICATION_JSON);
-//        mockMvc.perform(requestBuilder).andExpect(status().isOk())
-//                .andExpect(content().json("{'id' : 1,'name':'task1', 'estimatedDurationInHours' : 3.0}"));
-//    }
 
 
     private Task makeTask() {
