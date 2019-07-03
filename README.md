@@ -1,33 +1,16 @@
-**Task**
+**Spring boot web app with restful API**
 
-To build a simple TODO spring-boot application.
+**Features**
 
-**Features To Build**
-
-- Add a Task
-- Update a Task
-- Get a Task
+- Add a task
+- Update a task
+- Delete a task
+- Get a task
 - Get all tasks
 
-**Requirements**
+**Note**
 
-- This needs to a Spring boot application written using Jdk8+/kotlin/groovy
-- Exposes rest endpoint for the above features
-- Please use MySql DB
-- Use maven
-
-**What we are looking for**
-
-- Code structure
-- Code style
-- Code quality
-- Completion of Features
-- Testing approach (Pref using spock)
-- Cucumber tests (Nice to have)
-
-**How to submit test**
-
-Please create a private fork and once done please send a PR to integration branch.
+- Please remember to add the password for your root mysql user in the application properties file if needed.
 
 
 

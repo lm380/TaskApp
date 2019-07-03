@@ -23,7 +23,7 @@ public class TaskController {
     }
 
     @GetMapping("/list")
-    public ResponseEntity<List<Task>> findAll(){
+    public ResponseEntity findAll() {
         return ResponseEntity.ok(taskService.findAll());
     }
 
@@ -49,5 +49,15 @@ public class TaskController {
         }
         task.setId(id);
         return ResponseEntity.ok(taskService.saveTask(task));
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Task> delete(@PathVariable Long id){
+        if(!taskService.findTaskById(id).isPresent()) {
+            log.error("Task with id: " + id + " could not be found");
+            return ResponseEntity.badRequest().build();
+        }
+        taskService.deleteById(id);
+        return ResponseEntity.ok().build();
     }
 }
